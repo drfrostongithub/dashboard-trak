@@ -1,6 +1,9 @@
 import request from '@/utils/request'
 
 export function login(data) {
+  // console.log('this get called')
+  // Edit this for later fixed !!!!
+  data.username = 'admin'
   return request({
     url: '/vue-admin-template/user/login',
     method: 'post',

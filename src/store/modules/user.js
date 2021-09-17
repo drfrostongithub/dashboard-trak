@@ -31,6 +31,8 @@ const actions = {
   // user login
   login({ commit }, userInfo) {
     const { username, password } = userInfo
+    // Calling here for login
+    // Make this editable
     return new Promise((resolve, reject) => {
       login({ username: username.trim(), password: password }).then(response => {
         const { data } = response

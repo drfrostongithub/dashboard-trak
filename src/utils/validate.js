@@ -14,7 +14,11 @@ export function isExternal(path) {
  * @param {string} str
  * @returns {Boolean}
  */
-export function validUsername(str) {
-  const valid_map = ['admin', 'editor']
-  return valid_map.indexOf(str.trim()) >= 0
+export function validMobileNumber(str) {
+  // const valid_map = ['admin', 'editor']
+  // return valid_map.indexOf(str.trim()) >= 0
+
+  // Indonesian Mobile Number Validation
+  var pattern = /\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/g
+  return pattern.test(str) // returns a boolean
 }
